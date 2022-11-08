@@ -1,0 +1,1042 @@
+/* ---------------------Start Layout--------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-image: url("../images/OIP.jpg");
+    background-repeat: repeat-y;
+}
+
+.header-top {
+    width: 100%;
+    height: 70px;
+}
+
+.header-top > .container {
+    width: 990px;
+    height: inherit;
+    margin: 0 auto;
+    position: relative;
+}
+
+.menu {
+    width: 100%;
+    height: 35px;
+    background: #57bdf4;
+}
+
+.menu > .container {
+    width: 990px;
+    height: inherit;
+    margin: 0 auto;
+    background-color: #57bdf4;
+}
+
+.wrapper {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.content-left {
+    width: 730px;
+    float: left;
+}
+
+.content-right {
+    width: 250px;
+    float: right;
+}
+
+.sitemap {
+    width: 990px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 2%;
+    clear: both;
+    border: 1px dashed rgb(192, 192, 192);
+    border-top: 0px;
+    background-color: rgb(246, 246, 246);
+    box-sizing: border-box;
+    border-radius: 20px 20px 0 0;
+}
+
+.footer {
+    font-size: 15px;
+    line-height: 20px;
+    clear: both;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, white 15%, #57bdf4 100%);
+    border-top: 1px dashed rgb(168, 168, 168);
+}
+
+.footer img {
+    width: 80px;
+    padding: 10px 30px 0px 0px;
+    transition: all 0.5s;
+}
+
+.footer img:hover {
+    opacity: 0.6;
+}
+
+.footer p {
+    color: #999;
+}
+
+.clear {
+    clear: both;
+}
+
+/* End Layout */
+
+
+/* ---------------------Start Header--------------------- */
+/* Start Logo */
+.logo {
+    height: inherit;
+    float: left;
+}
+
+.logo > img {
+    width: inherit;
+    height: inherit;
+}
+
+/* End Logo */
+
+/* Start Search */
+cf::after, cf::before {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.searchform {
+    width: 320px;
+    height: 38px;
+    float: left;
+    border: 1px solid rgb(163, 163, 163);
+    margin-left: 20px;
+    margin-top: 12px;
+    border-radius: 10px;
+    background: rgb(237, 237, 237);
+    padding: 4px 8px;
+    box-shadow: 1px 1px 2px black,
+    2px 2px 4px gray,
+    3px 3px 6px rgb(79, 79, 79);
+}
+
+.searchform input {
+    border-radius: 10px;
+    width: 50%;
+    padding: 8px 10px;
+}
+
+.searchform input:focus {
+    outline: none;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0) inset;
+}
+
+.searchform input::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+.searchform button {
+    margin-left: 18px;
+    background: #57bdf4;
+    padding: 8px 26px;
+    border-radius: 5px 30px 2px 18px;
+    font-size: 1.3em;
+    color: rgb(252, 252, 252);
+    cursor: pointer;
+}
+
+.searchform button:focus {
+    outline: none;
+}
+
+.searchform button:hover {
+    background: linear-gradient(to bottom, #21a7ee 20%, #a1d8f3 50%, #21a7ee 100%);
+    opacity: 0.8;
+    animation: rhythmic 1.5s linear 0s infinite;
+}
+
+@keyframes rhythmic {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+
+/* End Search */
+
+/* Start Login-Register */
+#button-login, #button-register {
+    width: 120px;
+    height: 35px;
+
+    background: -moz-linear-gradient(bottom, #009aff 30%, #3FF 70%);
+    background: -o-linear-gradient(bottom, #009aff 30%, #3FF 70%);
+    background: -ms-linear-gradient(bottom, #009aff 30%, #3FF 70%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0.3, #009aff), color-stop(0.7, #3FF));
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    position: absolute;
+    transition: all 0.4s;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px black,
+    2px 2px 4px gray,
+    3px 3px 6px rgb(79, 79, 79);
+}
+
+#button-login > a, #button-register > a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+}
+
+#button-login:focus, #button-register:focus {
+    outline: none;
+}
+
+#button-login:hover, #button-register:hover {
+    background: -moz-linear-gradient(bottom, #00c9ff 30%, #3FF 70%);
+    background: -o-linear-gradient(bottom, #00c9ff 30%, #3FF 70%);
+    background: -ms-linear-gradient(bottom, #00c9ff 30%, #3FF 70%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0.3, #00c9ff), color-stop(0.7, #3FF));
+}
+
+#button-login a:active, #button-register a:active {
+    color: #FFF;
+}
+
+#button-login {
+    top: 25%;
+    left: 72%;
+}
+
+#button-register {
+    top: 25%;
+    left: 86%;
+}
+
+/* End Login-Register */
+
+/* ---------------------End Header--------------------- */
+
+/* ---------------------Start Menu--------------------- */
+.container ul {
+    padding-left: 10px;
+    line-height: 40px;
+}
+
+.container ul li {
+    float: left;
+    list-style-type: none;
+    line-height: inherit;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.overflow {
+    clear: both;
+}
+
+.container ul li a {
+    color: white;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.6s;
+}
+
+.container ul li a:hover {
+    color: red;
+    text-decoration: underline;
+
+}
+
+/* ---------------------End Menu--------------------- */
+
+
+/* ---------------------Start Content Left--------------------- */
+
+/************** Start Game Hot **************/
+.game-hot, .game-hot > .slider, .game-hot > .sidebar, .sidebar > .title-gamehot, .sidebar > .content-gamehot {
+    box-sizing: border-box;
+}
+
+.game-hot {
+    width: inherit;
+    height: 265px;
+    padding: 1% 0% 1% 0%;
+    margin-bottom: 15px;
+}
+
+/* Start Slider */
+.game-hot > .slider {
+    box-sizing: border-box;
+    float: left;
+    width: 430px;
+    height: 100%;
+    margin-right: 10px;
+    border: 1px solid blue;
+    border-radius: 1%;
+    box-shadow: 1px 1px 2px black,
+    2px 2px 4px gray,
+    3px 3px 6px rgb(79, 79, 79);
+}
+
+#wowslider-container1 img {
+    width: inherit;
+    height: inherit;
+}
+
+/* End Slider */
+
+
+/* Start Sidebar */
+.game-hot > .sidebar {
+    float: left;
+    width: 290px;
+    height: 100%;
+    border: 1px solid blue;
+    border-radius: 1%;
+    padding: 2px;
+    box-shadow: 1px 1px 2px rgb(75, 75, 75),
+    1px 1px 4px gray,
+    3px 3px 6px rgb(79, 79, 79);
+}
+
+.game-hot > .sidebar > .title-gamehot {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    background-color: #57bdf4;
+}
+
+.game-hot > .sidebar > .content-gamehot {
+    width: 100%;
+    height: 210px;
+    padding: 5px;
+}
+
+
+.box-gamehot, .box-gamehot-last {
+    width: 80px;
+    height: 97px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.box-gamehot {
+    margin-right: 15px;
+}
+
+.box-gamehot > a > img, .box-gamehot-last > a > img {
+    width: 80px;
+    height: 60px;
+    border-radius: 15%;
+    transition: all 1s;
+}
+
+.box-gamehot > a > img:hover, .box-gamehot-last > a > img:hover {
+    opacity: 0.5;
+    border-radius: 0%;
+}
+
+.box-gamehot > h3, .box-gamehot-last > h3 {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.box-gamehot > h3 > a, .box-gamehot-last > h3 > a {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+.box-gamehot > h3 > a:hover, .box-gamehot-last > h3 > a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* End Sidebar */
+/************** End Game Hot **************/
+
+/************** Start Thể Loại Game **************/
+.theloai-game {
+    width: inherit;
+    overflow: auto;
+    background: white;
+    margin-bottom: 10px;
+    border-top: 2px solid #3399FF;
+    background: rgba(248, 248, 255, 0.5);
+    border-radius: 1%;
+    box-shadow: 5px 5px 5px #666;
+    -moz-box-shadow: 5px 5px 5px #666;
+    -webkit-box-shadow: 5px 5px 5px #666;
+}
+
+.theloai-game header {
+    padding: 20px 0px 0px 20px;
+    margin: 0px;
+    font-size: 22px;
+    float: left;
+    font-weight: bold;
+    color: #009;
+    text-decoration: underline;
+}
+
+.theloai-game .xthem {
+    width: inherit;
+    padding-top: 8px;
+    text-align: right;
+}
+
+.theloai-game .xthem input {
+    border-radius: 20px;
+    line-height: 25px;
+    outline: none;
+    cursor: pointer;
+    background: rgb(0, 191, 255);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2px 10px;
+    margin-right: 15px;
+}
+
+.theloai-game .xthem input:hover {
+    background-color: rgb(255, 153, 153);
+    transition-property: background;
+    transition-duration: 0.5s;
+}
+
+.game-theloai-game {
+    float: left;
+    margin: 10px;
+    text-align: center;
+    width: 160px;
+    border: 1px solid #3399FF;
+    background-color: white;
+}
+
+.game-theloai-game img {
+    width: 160px;
+    height: 100px;
+}
+
+.game-theloai-game a {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+/************** End Thể Loại Game **************/
+
+/************** Start Form Login **************/
+.title-login-register {
+    width: fit-content;
+    padding: 8px 20px;
+    background-color: rgb(129, 220, 0);
+    margin-left: 80px;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px 25px 0px 0px;
+
+}
+
+#login-register-form {
+    width: 550px;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: white;
+    border: 5px solid rgb(129, 220, 0);
+    border-radius: 0px 25px 25px 25px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+
+#login-register-form > .row {
+    margin: 25px auto;
+}
+
+#login-register-form > .row > label {
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+    width: 30%;
+}
+
+#login-register-form > .row > input[type=text],
+#login-register-form > .row > input[type=password],
+#login-register-form > .row > input[type=email] {
+    text-align: left;
+    display: inline-block;
+    line-height: 22px;
+    border-style: ridge;
+    border-radius: 25px;
+    outline: none;
+    text-indent: 10px;
+    width: 45%;
+}
+
+#login-register-form > .row > input[type=text]:focus,
+#login-register-form > .row > input[type=password]:focus,
+#login-register-form > .row > input[type=email]:focus {
+    box-shadow: 1px 1px 2px rgb(54, 54, 54) inset;
+}
+
+#login-register-form > .row > input[type=radio] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#login-register-form > .row > input[type=date] {
+    width: fit-content;
+    padding: 2px;
+    line-height: 22px;
+    text-indent: 5px;
+    border-radius: 20px;
+    outline: none;
+    border-style: ridge;
+}
+
+#login-register-form > .row > input[type=date]:focus {
+    box-shadow: 1px 1px 2px rgb(54, 54, 54) inset;
+}
+
+#login-register-form > .row-submit {
+    text-align: center;
+}
+
+#login-register-form > .row-submit > button {
+    padding: 4px 12px;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 5px 10px;
+    outline: none;
+    border-style: outset;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-weight: 500; */
+    transition: all 1s;
+}
+
+#login-register-form > .row-submit > button:active {
+    border-style: inset;
+}
+
+#login-register-form > .row-submit > button:hover {
+    color: rgb(241, 57, 57);
+    background-color: rgb(247, 226, 199);
+}
+
+/************** End Form Login **************/
+
+
+/************** Start Play Game **************/
+.title-box-playgame {
+    width: fit-content;
+    padding: 8px 20px;
+    background-color: rgb(129, 220, 0);
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px 25px 0px 0px;
+}
+
+.box-playgame {
+    width: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: white;
+    border: 3px solid rgb(129, 220, 0);
+    border-radius: 0px 5px 5px 5px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.box-playgame object {
+    width: inherit;
+    height: 600px;
+}
+
+/* Start phần Like - Share */
+.like {
+    display: inline-block;
+}
+
+
+.like input {
+    display: none;
+}
+
+
+.like label {
+    float: right;
+    padding: 10px;
+    font-size: 30px;
+    color: #444;
+    transition: all .2s;
+}
+
+
+.like #like label:before {
+    content: '\f004';
+    font-family: FontAwesome;
+    color: #FFF;
+    text-shadow: 0 0 20px #952;
+}
+
+.like #like input:checked + label:before {
+    content: '\f004';
+    color: #F00;
+    transition: all .25s;
+    text-shadow: 0 0 20px #952;
+}
+
+.like #like label:hover {
+    transform: rotate(-15deg) scale(1.3);
+}
+
+.like p {
+    float: left;
+}
+
+.soluong {
+    line-height: 55px;
+}
+
+.like #dow label:before {
+    content: '\f0c0';
+    font-family: FontAwesome;
+    color: #06F;
+}
+
+#share label:before {
+    content: '\f064';
+    font-family: FontAwesome;
+    color: #06F;
+}
+
+#share label:hover {
+    transform: scale(1.3);
+}
+
+/* End phần Like - share */
+
+/* Start chú thích và hướng dẫn chơi */
+.content-box-playgame {
+    margin-top: 30px;
+}
+
+.textview p {
+    padding-bottom: 8px;
+}
+
+.textview h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-bottom: 8px
+}
+
+.textview h2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    padding-bottom: 8px
+}
+
+.instruction {
+    margin-bottom: 16px;
+}
+
+.instruction .screenshot {
+    max-width: 200px;
+    max-height: 200px;
+    float: right;
+    border-radius: 3px;
+    margin: 0 0 16px 16px;
+}
+
+.instruction li {
+    list-style-type: disc;
+    margin: 0 0 0 30px;
+}
+
+/* End chú thích và hướng dẫn chơi */
+
+.game-cung-theloai {
+    width: inherit;
+    height: auto;
+    background-color: white;
+    border: 1px solid rgb(119, 226, 253);
+    border-top: 0px;
+}
+
+.title-game-cung-theloai {
+    box-sizing: border-box;
+    width: inherit;
+    height: 40px;
+    line-height: 40px;
+    background: linear-gradient(to bottom, white 10%, #b2f0f0 100%);
+    border-bottom: 1px solid #0CF;
+}
+
+.title-game-cung-theloai > .tentheloai {
+    background: white;
+    width: fit-content;
+    height: inherit;
+    border-top: 1px solid #0CF;
+    border-right: 1px thick #0CF;
+    border-radius: 0 33px 0 0;
+    padding-right: 20px;
+    padding-left: 5px;
+    line-height: 40px;
+
+}
+
+.title-game-cung-theloai > .tentheloai a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F60;
+    text-decoration: none;
+}
+
+.list-game {
+    height: auto;
+    overflow: auto;
+    padding: 10px;
+}
+
+.game-cung-theloai .box-game, .game-cung-theloai .box-game-last {
+    width: 170px;
+    height: auto;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.game-cung-theloai .box-game {
+    margin-right: 10px;
+}
+
+.game-cung-theloai .box-game img, .game-cung-theloai .box-game-last img {
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.game-cung-theloai .box-game img:hover, .game-cung-theloai .box-game-last img:hover {
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+.list-game .box-game h5, .list-game .box-game-last h5 {
+    padding: 0px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.list-game .box-game a, .list-game .box-game-last a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.list-game .box-game a:hover, .list-game .box-game-last a:hover {
+    text-decoration: underline;
+    color: darkred;
+}
+
+.list-game .box-game p, .list-game .box-game-last p {
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.box-game-xemthem {
+    width: 24%;
+    height: 35px;
+    margin-left: 38%;
+    border-radius: 15px;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.box-game-xemthem:hover {
+    background-color: #ffe5db;
+}
+
+/************** End Play Game **************/
+
+/************** Start Pagination **************/
+.pagination {
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin-top: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagination li {
+    display: inline;
+    text-align: center;
+}
+
+.pagination a {
+    float: left;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 12px;
+    color: #fff;
+    margin-left: -1px;
+    border: 1px solid transparent;
+    line-height: 1.5;
+}
+
+.pagination a.active {
+    cursor: default;
+}
+
+.pagination a:active {
+    outline: none;
+}
+
+.pagination li:first-child a {
+    -moz-border-radius: 50px 0 0 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px 0 0 50px;
+}
+
+.pagination li:last-child a {
+    -moz-border-radius: 0 50px 50px 0;
+    -webkit-border-radius: 0;
+    border-radius: 0 50px 50px 0;
+}
+
+.pagination a {
+    border-color: #ddd;
+    color: #999;
+    background: #fff;
+}
+
+.pagination a:hover {
+    color: #E34E48;
+    background-color: #eee;
+}
+
+.pagination a.active, .pagination a:active {
+    border-color: #E34E48;
+    background: #E34E48;
+    color: #fff;
+}
+
+/************** End Play Game **************/
+
+/************** Start Sitemap **************/
+.box-sitemap, .box-sitemap-last {
+    display: inline-block;
+    width: 16%;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bolder;
+
+}
+
+.box-sitemap {
+    margin-left: 4%;
+}
+
+.box-sitemap a, .box-sitemap-last a {
+    text-decoration: none;
+    line-height: 30px;
+    color: #5c9508;
+    transition: all 0.5s;
+}
+
+.box-sitemap a:hover, .box-sitemap-last a:hover {
+    text-decoration: underline;
+    color: #ff482f;
+}
+
+.non-enable {
+
+}
+
+/************** End Sitemap **************/
+
+
+/* ---------------------End Content Left--------------------- */
+
+
+/* ---------------------Start Content Right--------------------- */
+/************** Start Quảng cáo **************/
+.quangcao {
+    width: inherit;
+    margin-top: 8px;
+    box-shadow: 1px 1px 2px black,
+    2px 2px 4px gray,
+    3px 3px 6px rgb(79, 79, 79);
+}
+
+/************** End Quảng Cáo **************/
+
+/************** Start Game chơi nhiều nhất **************/
+.game-choinhieunhat, .game-choinhieunhat > .title-game-choinhieunhat {
+    box-sizing: border-box;
+}
+
+.game-choinhieunhat {
+    width: 250px;
+    overflow: auto;
+    padding: 5px;
+    border: 0.5px solid #5168fb;
+    border-top: 4px solid #5168fb;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 2px black,
+    2px 2px 4px gray,
+    3px 3px 6px rgb(79, 79, 79);
+}
+
+.game-choinhieunhat > .title-game-choinhieunhat {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+    margin: 2px auto 10px auto;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #57bdf4;
+    text-align: center;
+}
+
+.box-game-choinhieunhat, .box-game-choinhieunhat-last {
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.box-game-choinhieunhat {
+    margin-bottom: 25px;
+    border-bottom: 1px dashed blueviolet;
+}
+
+.box-game-choinhieunhat img, .box-game-choinhieunhat-last img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    transition: all 1s;
+}
+
+.box-game-choinhieunhat img:hover, .box-game-choinhieunhat-last img:hover {
+    transform: rotate(360deg);
+    opacity: 0.7;
+}
+
+.box-game-choinhieunhat section, .box-game-choinhieunhat-last section {
+    height: 60px;
+    float: left;
+    margin-left: 10px;
+}
+
+.box-game-choinhieunhat section > a, .box-game-choinhieunhat-last section > a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.box-game-choinhieunhat section > a:hover, .box-game-choinhieunhat-last section > a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.box-game-choinhieunhat section h5, .box-game-choinhieunhat-last section h5 {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 4px auto;
+}
+
+.box-game-choinhieunhat section p, .box-game-choinhieunhat-last section > p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+/************** End Game chơi nhiều nhất **************/
+/* ---------------------End Content Right--------------------- */
+
+/* Start Bổ trợ */
+.red {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.asterisk {
+    font-size: 18px;
+}
+
+/* End Bổ trợ */
